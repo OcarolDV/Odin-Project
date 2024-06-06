@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Input</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class = "headContainer">
+        
+        <div class="container">
+            <h1>Add a Book</h1>
+    
+            <!-- Form to add a book, contain all the input, enclosed in one form -->
+            <form id="bookForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="pages" placeholder="Pages" required>
+    
+                <!-- Select dropdown for have you read the book or not -->
+                <select id="haveRead" required>
+                    <option value="">Have you read the book?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+    
+        <div>
+            <h1>Books Library</h1>
+            <div>
+                <button id="showAll">Show All Books</button>
+                <button id="showRead">Show Read Books</button>
+                <button id="showNotRead">Show Not Read Books</button>
+            </div>
+
+            <div id="booksContainer"></div>
+    
+    
+        </div>
+
+    </div>
+
+
+
+    <script src="Books.js"></script>
+</body>
+</html>
